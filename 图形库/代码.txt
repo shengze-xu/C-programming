@@ -1,0 +1,31 @@
+#include "acllib.h"
+#include <stdio.h>
+
+int Setup(){
+	initConsole;
+	initWindow("Paint",DEFAULT,DEFAULT,400,400);
+	beginPaint();
+	setPenColor(RGB(250,60,20));
+                setBrushColor(RGB(250,60,20));
+                rectangle(0,0,20,380);
+                setPenColor(RGB(120,190,0));
+                setBrushColor(RGB(120,190,0));
+                rectangle(20,0,400,20);
+                setPenColor(RGB(0,160,250));
+                setBrushColor(RGB(0,160,250));
+                rectangle(0,380,380,400);
+                setPenColor(RGB(260,190,0));
+                setBrushColor(RGB(260,190,0));
+                rectangle(380,20,400,400);
+	setPenWidth(2);
+	setPenColor(RED);
+	arc(100,100,300,300,200,300,200,300);
+	setPenWidth(1);
+	setPenColor(BLACK);
+	line(130,150,170,150);
+	line(230,150,270,150);
+	line(200,180,200,200);
+	arc(150,150,250,250,150,200,250,200);
+	endPaint();
+}
+
